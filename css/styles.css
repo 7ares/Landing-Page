@@ -1,0 +1,199 @@
+:root {
+  --hover-color: #00b1eb;
+  --header-color: #001e50;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 65%;
+  overflow-x: hidden;
+}
+
+.bg-home {
+  object-fit: cover;
+  height: 100%;
+  object-position: 50% 50%;
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.active-items {
+  padding: 1rem;
+  border-radius: 50%;
+  letter-spacing: 0.2rem;
+  background-color: #001e50;
+  color: #00b1eb !important;
+}
+#navbar-list {
+  list-style: none;
+  font-size: 1rem;
+}
+#navbar-list li a {
+  color: white;
+}
+.home-header {
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background: radial-gradient(rgb(0, 67, 122), rgb(0, 30, 80));
+}
+
+.vw-logo {
+  width: 70px;
+  height: 70px;
+  transform: translateY(-50%);
+  top: 100%;
+  left: 60%;
+  color: white;
+  z-index: 1;
+}
+
+.logo-container::after,
+.logo-container::before {
+  content: '';
+
+  position: absolute;
+
+  bottom: 0;
+
+  height: 1px;
+  background-color: white;
+  z-index: 1;
+}
+.logo-container::after {
+  width: 60%;
+}
+.logo-container::before {
+  right: 0;
+  width: 35%;
+}
+.menu-bar {
+  top: 0;
+  bottom: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.navbarList-style li a {
+  color: #001e50 !important;
+}
+.navbarList-style li a:hover {
+  color: #00b1eb !important;
+}
+.main-header a {
+  width: max-content;
+  color: var(--header-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.main-header p {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.main-header a:hover {
+  background-color: #eeeeee99;
+}
+
+/* contact-us style */
+.contact-us {
+  height: 50vh;
+  background: radial-gradient(rgb(0, 67, 122), rgb(0, 30, 80));
+}
+.contactUs_btn:hover {
+  letter-spacing: 0.2rem;
+  background-color: #00b1eb33 !important;
+}
+/* explore section style */
+.explore-content {
+  display: none;
+}
+.explore-container .explore-content {
+  display: block;
+}
+#explore-img {
+  background-size: cover;
+}
+/* golf-trim style */
+.golf-trim-content {
+  background: #001e50;
+}
+.golf-trim-content p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+.golf-img-container {
+  top: 10%;
+  left: 50%;
+  right: -20%;
+
+  bottom: 40%;
+}
+.golf-img-container img {
+  background-size: cover;
+}
+.glof-trim-links a {
+  letter-spacing: 0;
+  text-decoration: underline;
+
+  color: #001e50;
+}
+
+
+.fa-bars {
+  color: #00b1eb;
+  z-index: 10000;
+}
+@media (max-width: 900px) {
+  .home-header {
+    width: 100%;
+  }
+  .golf-img-container {
+    position: static;
+  }
+}
+@media (max-width: 770px) {
+  .menu-bar {
+    height: max-content;
+
+    flex-direction: column;
+    width: 50%;
+    background-color: #001e50 !important;
+  }
+
+  .menu-bar ul {
+    padding: 0;
+    width: 100% !important;
+
+    position: sticky !important;
+  }
+  .menu-bar ul li {
+    margin: 1.3rem;
+  }
+  .logo-container {
+    display: none;
+  }
+  .active-items {
+    letter-spacing: 0.2rem;
+
+    color: #00b1eb !important;
+  }
+}
